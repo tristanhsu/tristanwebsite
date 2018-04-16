@@ -1,0 +1,240 @@
+@font-face
+{
+	font-family: rosewood;
+
+	src: url(../fonts/RosewoodStd-Fill.otf);
+}
+
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	color: #d52a3a;
+	background: #0f3043;
+}
+
+h2
+{
+	font-family: rosewood;
+	font-size: 60pt;
+
+	padding-bottom: 30pt;
+
+	text-align: center;
+	letter-spacing: -5.5pt;
+}
+
+h3
+{
+	font-family: rosewood;
+	font-size: 3em;
+
+	letter-spacing: -3.5pt;
+}
+
+section
+{
+	padding: 80pt;
+}
+
+.border-box
+{
+	position: fixed;
+	z-index: -1;
+	top: 20pt;
+	left: 20pt;
+
+	width: calc(100vw - 40pt);
+	height: calc(100vh - 40pt);
+
+	border: solid;
+	border-width: 7pt;
+	border-color: #d52a3a;
+}
+
+.landing_page
+{
+	min-height: 100vh;
+	margin: 185pt 20pt 0 20pt;
+	padding: 0;
+}
+
+.name_container
+{
+	position: fixed;
+	z-index: 2;
+	top: 45pt;
+	left: 0;
+
+	width: 100%;
+
+	mix-blend-mode: screen;
+}
+
+.name
+{
+	font-family: rosewood;
+	font-size: 130pt;
+	line-height: 100%;
+
+	cursor: pointer;
+	transition: all .2s;
+	text-align: center;
+	letter-spacing: -11pt;
+
+	color: #d52a3a;
+}
+
+.name:hover
+{
+	-webkit-text-stroke-color: white;
+}
+
+.reel_container
+{
+	position: absolute;
+	top:0;
+	left:0;
+
+	display: flex;
+
+	width: 100vw;
+	height: 100vh;
+
+	align-items: center;
+	justify-content: center;
+}
+
+
+.video_container
+{
+	display: flex;
+
+	margin-bottom: 40pt;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.links
+{
+	font-family: rosewood;
+
+	position: fixed;
+	z-index: 2;
+	bottom: 30pt;
+	left: 80pt;
+
+	display: flex;
+
+	width: calc(100vw - 160pt);
+
+	letter-spacing: -3pt;
+
+	justify-content: space-between;
+	mix-blend-mode: screen;
+}
+
+.link
+{
+	display: inline-block;
+
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.link:hover
+{
+	color: white;
+}
+
+.photo_project
+{
+	margin-bottom: 60pt;
+}
+
+.photo_cage
+{
+	max-width: 600pt;
+	max-height: 340pt;
+}
+
+img
+{
+	padding: 0 10pt;
+}
+
+.mixed_images
+{
+	float: right;
+}
+
+.mixed
+{
+	padding: 0;
+	height: 500pt;
+	width: auto;
+}
+
+.bio_text
+{
+	width: 70vw;
+	display: block;
+	margin: auto;
+	margin-bottom: 14vh;
+}
+
+
+
+/*
+media queries
+*/
+
+@media screen and (min-width: 100px) and (max-width: 1620px)
+{
+	.name
+	{
+		font-size: 60pt;
+
+		letter-spacing: -6pt;
+	}
+
+	.link
+	{
+		font-size: 2.5em;
+
+		letter-spacing: -2pt;
+	}
+
+	.section_name
+	{
+		font-size: 50pt;
+
+		padding-bottom: 0;
+
+		letter-spacing: -3pt;
+	}
+
+	h3
+	{
+		font-size: 2.5em;
+
+		letter-spacing: -2.3pt;
+	}
+
+	.reel_container
+	{
+	}
+
+	.video
+	{
+		width: 640pt;
+		height: 360pt;
+		/*padding: 10pt;*/
+	}
+}
