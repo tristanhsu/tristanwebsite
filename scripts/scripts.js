@@ -31,23 +31,23 @@ $("document").ready(function(){
 	});
 
 	
-	$('.photo_cage').slick({
-		dots: true,
-		lazyLoad: 'ondemand',
-		speed: 300,
-		variableWidth: true,
-		centerMode: true,
-		centerPadding: '200px',
-		slidesToShow: 1,
-		responsive: [
-		{
-			breakpoint: 1100,
-			settings: {
-				dots:false
-			}
-		}
-		]
-	});
+	// $('.photo_cage').slick({
+	// 	dots: true,
+	// 	lazyLoad: 'ondemand',
+	// 	speed: 300,
+	// 	variableWidth: true,
+	// 	centerMode: true,
+	// 	centerPadding: '200px',
+	// 	slidesToShow: 1,
+	// 	responsive: [
+	// 	{
+	// 		breakpoint: 1100,
+	// 		settings: {
+	// 			dots:false
+	// 		}
+	// 	}
+	// 	]
+	// });
 
 	$('.photo_cage').slick({
 		dots: true,
@@ -57,7 +57,8 @@ $("document").ready(function(){
 		centerMode: true,
 		centerPadding: '200px',
 		slidesToShow: 1,
-		
+		prevArrow: $(".pp2"),
+		nextArrow: $(".nn2")
 	});
 	
 
