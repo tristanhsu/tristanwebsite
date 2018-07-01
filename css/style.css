@@ -35,6 +35,7 @@ h3
     font-size: 3em;
 
     letter-spacing: -3.5pt;
+    line-height: 80%;
 }
 
 section
@@ -169,7 +170,7 @@ a:hover
     margin-bottom: 60pt;
 }
 
-.photo_project > h3 
+.photo_project > h3
 {
 	text-align: center;
 }
